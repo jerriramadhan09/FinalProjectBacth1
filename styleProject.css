@@ -1,0 +1,182 @@
+body{
+    font-size:16px;
+    background:peachpuff;
+}
+* {
+    margin:0; 
+    padding:0;
+}
+
+nav {
+    margin:auto;
+    text-align: center;
+    width: 100%;
+    font-family: arial;
+} 
+
+nav ul {
+    background:#042dd1;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+ }
+
+nav ul li{
+    float:left;
+}
+
+nav ul li:hover{
+    background:#d68d9a;
+}
+
+nav ul li:hover a{
+    color:#000;
+}
+
+nav ul li a{
+    display: block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+            li a, .dropbtn {
+                 display: inline-block;
+                 color: white (23, 9, 209);
+                 text-align: center;
+                 padding: auto;
+                 text-decoration: none;
+                }
+
+            li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+            }
+
+            li.dropdown {
+             display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+             color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+
+            #Random-list{
+                border:5px  ;
+                padding:100px ;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-right: 50px;
+                margin-left: 50px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }
+            
+            #Random-list1{
+                border:5px  ;
+                padding:50px ;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-right: 50px;
+                margin-left: 80px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }
+            
+            #T1{
+                text-align: center;
+            } 
+            #T2{
+                text-align: center;
+            }
+            #T3{
+                text-align: center;
+            }
+            #T4{
+                text-align: center;
+            }
+            #T5{
+                text-align: center;
+            }
+            #T6{
+                text-align: center;
+            }
+            #Ban-list{
+                border:5px  ;
+                padding:50px ;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 50px;
+                margin-left: 50px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }
+
+            .icon{
+                cursor: pointer;
+                cursor: hand;
+            }
+
+            #Ban2-list{
+                border:5px  ;
+                padding:10px ;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 50px;
+                margin-left: 50px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }
+
+            #AspiraPremio-list{
+                border:5px  ;
+                padding:50px ;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-right: 50px;
+                margin-left: 50px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }
+            #AspiraPremio-list1{
+                border:5px  ;
+                padding:50px ;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-right: 50px;
+                margin-left: 50px;
+                font-size: 18px;
+                display: flex;
+                color:  #37988e;
+                justify-content: space-between;
+            }

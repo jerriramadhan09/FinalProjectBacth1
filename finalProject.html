@@ -1,0 +1,195 @@
+<html>
+    <title>MotoGrid.com</title>
+    <head>
+        <link href="styleProject.css" rel ="stylesheet">
+        
+    </head>
+        <body>
+            <div>
+                <header>
+                    
+                        <nav>
+                            <ul>
+                                <li>
+                                        <img id="logo" src="MGmotoShop2.png" width="100px" /> 
+                                </li>
+                                <li class="dropdown">
+                                    <a href="finalProject.html">Home</a></li>
+                                <li class="dropdown">
+                                        <a href="javascript:void(0)" class="dropbtn">Category</a>
+                                        <div class="dropdown-content">
+                                          <a href="MGmotoShopBan.htm">Ban</a>
+                                          <a href="#">Aksesoris</a>
+                                          <a href="#">Part Mesin</a>
+                                          <a href="#">Helm</a>
+                                        </div>
+                                      </li>
+                                <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Merk</a>
+                                <div class="dropdown-content">
+                                                   <a href="#">Honda</a>
+                                                   <a href="#">Yamaha</a>
+                                                   <a href="#">Kawasaki</a>
+                                                   <a href="#">Bajaj</a>
+                                                   <a href="#">KTM</a>
+                                               
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">Contact</a></li>
+                                <li>
+                                    <div>
+                                        <form>
+                                            <a href="#">
+                                            <input class="search" type="text" placeholder="Cari Barang" required >	
+                                            <input class="button" type="button" value="Cari">
+                                            </a>	
+                                        </form>
+                                    </div>
+                                </li>
+                                </ul>
+                        </nav>
+                </header>
+
+            </div>
+            <section>
+                <div id="Random-list">
+                  <Random>
+                    <div>
+                        <img src="ShinkoE705F.jpg" width="250px">
+                        <div id="T1">
+                          <a href="#">Shinko E 705 (F) 120/70R-17</a>
+                          <div class = "Harga">
+                          Rp.1.200.000<input type="checkbox" id="menu1" value="1200000" onClick="finalProject()">
+                        </div>
+                        <div class ="m-5">
+                            <button class= "btn btn-primary" id= "tambah"> + </button>
+                            <span class= "bg-success text-white font-weight-bold p-2" id= "hasil"> 0</span>
+                            <button class= "btn btn-success" id= "kurang"> - </button>
+                            
+                              
+                          </div>
+                        </div>
+                    </div>
+                  </Random>
+                  <Random>
+                    <div>
+                        <img src="ShinkoE804-805-130-80-17.jpg" width="250px">
+                        <div id="T2">
+                          <a href="#">Shinko E 805  130/80R-17</a>
+                          <div class = "Harga">
+                              Rp.1.350.000<input type="checkbox" id="menu2" value="1350000" onClick="finalProject()">
+                            </div>
+                        </div>
+                    </div>
+                  </Random>
+                  <Random>
+                    <div>
+                        <img src="visorCustom.png" width="250px">
+                        <div id="T3">
+                         <a href="#"> Windshield Adventures </a>
+                         <div class = "Harga">
+                            Rp.175.000<input type="checkbox" id="menu3" value="175000" onClick="finalProject()">
+                          </div>
+                        </div>
+                    </div>
+                  </Ramdom>
+                  </div>
+                  <div id="Random-list1">
+                  <Random>
+                    <div>
+                        <img src="BreketVisorMegapro.jpg" width="250px">
+                        <div id="T4">
+                          <a href="#">Breket Visor Megapro</a>
+                          <div class = "Harga">
+                              Rp.125.000<input type="checkbox" id="menu4" value="125000" onClick="finalProject()">
+                            </div>
+                        </div>
+                    </div>
+                  </Random>
+                  <Random>
+                    <div>
+                        <img src="BusiTengahBajaj.jpg" width="280px">
+                        <div id="T5">
+                          <a href="#">Busi Bajaj Pulsar 220 (tengah)</a>
+                          <div class = "Harga">
+                              Rp.55.000<input type="checkbox" id="menu5" value="55000" onClick="finalProject()">
+                            </div>
+                        </div>
+                    </div>
+                  </Random>
+                  <Random>
+                    <div>
+                        <img src="mdsSupermotoWhite.jpg" width="250px">
+                        <div id="T6">
+                          <a href="#">MDS Supemoto White</a>
+                          <div class = "Harga">
+                              Rp.450.000<input type="checkbox" id="menu6" value="450000" onClick="finalProject()">
+                            </div>
+                        </div>
+                    </div>
+                  </Random>
+                  <div> 
+                  Total Rp <input type="text" id="total"></br>
+                  Jumlah Pembayaran Rp <input type="text" id="bayar" onchange="inputan()"></br>
+                  Jumlah Pengembalian Rp <span id="kembali"></span>
+                  </div>
+
+
+                </div>
+              </section>
+              
+              <script>
+               function finalProject()
+                    {
+                    var jumlah=0;
+                    var harga;
+
+
+                    if(document.getElementById("menu1").checked)
+                    {
+                    harga=document.getElementById("menu1").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    if(document.getElementById("menu2").checked)
+                    {
+                    harga=document.getElementById("menu2").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    if(document.getElementById("menu3").checked)
+                    {
+                    harga=document.getElementById("menu3").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    if(document.getElementById("menu4").checked)
+                    {
+                    harga=document.getElementById("menu4").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    if(document.getElementById("menu5").checked)
+                    {
+                    harga=document.getElementById("menu5").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    if(document.getElementById("menu6").checked)
+                    {
+                    harga=document.getElementById("menu6").value;
+                    jumlah=jumlah+parseInt(harga);
+                    }
+                    document.getElementById("total").value=jumlah;
+                    }
+
+                    function inputan (){
+                    var total;
+                    var bayar;
+                    var kembalian;
+                    total = document.getElementById("total").value;
+                    bayar = document.getElementById("bayar").value;
+                    kembalian = parseInt(bayar)-parseInt(total);
+                    document.getElementById("kembali").innerHTML=kembalian;
+                    }
+
+              </script>
+        </body>
+        
+           
+</html>
